@@ -1,9 +1,21 @@
 import {Link } from 'react-router-dom'
-import personal_image from '/imagen.png'
+import personal_image from '/imagen_real.png'
 import './home.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact, faPython, faJava, faGithub, faNodeJs, faDocker, faFlutter, faSquareLinkedin, faGoogle} from '@fortawesome/free-brands-svg-icons'
 
 export default function Home () {
+  
+  const items = [
+    { icon: faPython, name: 'Python' },
+    { icon: faReact, name: 'React' },
+    { icon: faJava, name: 'Java' },   
+    { icon: faGithub, name: 'GitHub' },
+    { icon: faNodeJs, name: 'NodeJS' },
+    { icon: faDocker, name: 'Docker' },
+    { icon: faFlutter, name: 'Flutter' },
+  ];
+  
   return(
     <div>
       <div className="presentation">
@@ -17,17 +29,17 @@ export default function Home () {
       <div className='link-info'>
         <div className='link'>
           <Link rel="stylesheet" to="https://github.com/bvarelai" >
-            <img src="/portfolio/Git.png" alt="Logo de ubicación"/>
+             <FontAwesomeIcon className='icon-tecnologies' icon={faGithub} size="2x"/>
           </Link>
         </div>
         <div className='link'>
           <Link rel="stylesheet" to="mailto:b.varela.sieiro@gmail.com" >
-            <img src="/portfolio/email.png" alt="Logo de ubicación"/>
+             <FontAwesomeIcon className='icon-tecnologies' icon={faGoogle} size="2x"/>
           </Link>
         </div>
         <div className='link'>
           <Link rel="stylesheet" to="https://www.linkedin.com/in/brais-varela-sieiro-939aa6244/" >
-            <img src="/portfolio/linkendin.png" alt="Logo de linkedin"/>
+             <FontAwesomeIcon className='icon-tecnologies' icon={faSquareLinkedin} size="2x"/>
           </Link>
         </div>
       </div>
@@ -55,6 +67,20 @@ export default function Home () {
                 Management with React & TypeScrypt
               </li>
            </div>
+        </div>
+      </div>
+      <div  className='competence-abilities'>
+        <h2>Competences and abilities</h2>
+        <span>
+          There are diferent skills that I have acquired during my career and personal projects. These are some of them:
+        </span>
+        <div className='tecnologies'>          
+            {items.map((item, index) => (
+              <div key={index}>
+                <FontAwesomeIcon className='icon-tecnologies' icon={item.icon} size="5x"/>
+                <span>{item.name}</span>
+              </div>
+            ))}
         </div>
       </div>
     </div>

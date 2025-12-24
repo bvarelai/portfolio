@@ -1,24 +1,56 @@
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0d0f12;
+  background: #0d0f12;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --color-header: rgba(255, 255, 255, 0.02);
+  --color-footer: rgba(255, 255, 255, 0.02);
+  --color-text-sections: linear-gradient(90deg, #646cff, #61dafb);
+  --color-background-information : #1a1c1f;
+  --color-background-tecnologies: #1e1e1e;
+  --color-font-little-text: rgba(255, 255, 255, 0.6);
+  --color-font-normal-text: white;
+  --color-hover-links: #646cff;
+  --color-tecnologies-icons: #63a3fd;
+  --color-menu-mobile: #0d0f12;
+
 }
 
-a {
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+[data-theme="light"] {
+font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --color-header:rgba(0, 0, 0, 0.05);
+  --color-footer: rgba(0, 0, 0, 0.05);
+  --color-text-sections: black;
+  --color-background-information: #eef0f3;
+  --color-background-tecnologies: #eaeaea;
+  --color-font-little-text: rgba(0, 0, 0, 0.6);
+  --color-font-normal-text: black;
+  --color-hover-links: #3b47e6;
+  --color-tecnologies-icons: black;
+  --color-menu-mobile: #f5f5f5;
 
+}
 
 h1 {
   font-size: 3.2em;
@@ -51,29 +83,4 @@ p{
   color: rgba(255, 255, 255, 0.6);
 }
 
-button {
-  border-radius: 8px;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-button:hover {
-  color: #646cff;
-}
 
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
