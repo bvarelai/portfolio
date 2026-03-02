@@ -428,7 +428,7 @@
   }
 
   .web-header span{
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .web-header div{
@@ -442,7 +442,7 @@
     text-decoration: inherit;
     transition: color 0.5s;  
     color :var(--color-font-normal-text);
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .web-header a:hover{
@@ -515,14 +515,14 @@
   }
 
   .information h2{
-    font-size: 32px;
+    font-size: 28px;
     font-family: 'Inter', sans-serif;
     color: var(--color-font-normal-text); 
   }
 
   .information p{
     width: 500px;
-    font-size: 22px;
+    font-size: 20px;
     color: var(--color-font-little-text);
   }
 
@@ -546,7 +546,7 @@
   }
 
   .about-me span{
-    font-size: 22px;
+    font-size: 20px;
     width: 800px;
     margin-top: -25px;
     color: var(--color-font-normal-text);
@@ -565,22 +565,23 @@
     flex-direction: column;
     text-align: left;
     padding: 10px;
+    padding-block-end: 15px;
     background-color:var(--color-background-information);
     border-radius: 15px;
     transition: transform 0.5s;
-    width: 450px;
+    width: 430px;
   }
 
   .personal-info h3 {
     margin-top: 10px;
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
     color: var(--color-font-normal-text);
   }
 
   .personal-info li{
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 35px;
     color: var(--color-font-normal-text);
   }
@@ -608,7 +609,7 @@
 
    .competence-abilities span{
      margin-top: -15px;
-     font-size: 22px;
+     font-size: 20px;
      color: var(--color-font-normal-text);
    }
 
@@ -632,8 +633,8 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-left: 55px;
-    margin-top: -20px;
+    margin-left: 5px;
+    margin-top: -25px;
   }
 
   .link img{
@@ -691,7 +692,7 @@
     margin-top: 25px;
     margin-block-end: 45px;
     display: grid;
-    grid-template-columns: repeat(5, 180px);
+    grid-template-columns: repeat(5, 160px);
     justify-content: center;
     gap: 20px;
   }
@@ -705,7 +706,7 @@
     gap: 20px;
     background-color: var(--color-background-tecnologies);
     border-radius: 15px;
-    width: 170px;
+    width: 140px;
     padding-top: 10px;
   }
 
@@ -714,7 +715,7 @@
   }
 
   .tecnologies span{
-    font-size: 19px;
+    font-size: 17px;
     margin-bottom: 10px;
   }
 
@@ -722,9 +723,6 @@
     color: var( --color-tecnologies-icons);
   }
 
-  .built-with{
-  width: 250px;
-  }
   .links-info img {
     width: 27px;
     height: 27px;
@@ -774,13 +772,19 @@
     padding: 15px;
     padding-block-end: 5px;
     padding-top: 10px;
-    font-size: 20px;    
+    font-size: 17px;    
     font-family: 'Inter', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-self: center;
     text-align: center;
   }
+  
+   .built-with{
+    width: 260px;
+    margin-left: 180px;
+   }
 }
 
 

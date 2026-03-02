@@ -77,7 +77,7 @@ export default function Home () {
         <div className='tecnologies'>          
             {items.map((item, index) => (
               <div key={index}>
-                <FontAwesomeIcon className='icon-tecnologies' icon={item.icon} size="5x"/>
+                <FontAwesomeIcon className='icon-tecnologies' icon={item.icon} size="4x"/>
                 <span>{item.name}</span>
               </div>
             ))}
