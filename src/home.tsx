@@ -2,7 +2,7 @@ import {Link } from 'react-router-dom'
 import personal_image from '/imagen_real.png'
 import './home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faPython, faJava, faGithub, faNodeJs, faDocker, faFlutter, faSquareLinkedin, faGoogle} from '@fortawesome/free-brands-svg-icons'
+import { faReact, faPython, faJava, faGithub, faNodeJs, faDocker, faFlutter, faSquareLinkedin, faGoogle, faCss, faLinux,faJs} from '@fortawesome/free-brands-svg-icons'
 
 export default function Home () {
   
@@ -14,6 +14,9 @@ export default function Home () {
     { icon: faNodeJs, name: 'NodeJS' },
     { icon: faDocker, name: 'Docker' },
     { icon: faFlutter, name: 'Flutter' },
+    { icon: faCss, name: 'CSS' },
+    { icon: faLinux, name: 'Linux' },
+    { icon: faJs, name: 'JavaScript' },
   ];
   
   return(

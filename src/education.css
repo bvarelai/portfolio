@@ -1,0 +1,464 @@
+@media only screen and (max-width: 707px) {
+
+  @media screen and (orientation: portrait) {
+   
+    .education-info {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translateY(-20px);
+        animation: aparecerAbajo 0.7s ease forwards;
+ 
+    }
+ 
+    .education-info h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 27px;
+      font-weight: bold;
+      background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;    
+    }
+   
+    .education-info span {
+      font-size: 15px;
+      margin-top: -15px;
+      color: var(--color-font-normal-text);
+      width: 350px;
+    } 
+
+    .timeline {
+      padding-top: 35px;
+      padding-block-end: 15px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      transform: translateY(-20px);
+      animation: aparecerAbajo 0.7s ease forwards;
+    }
+
+    .timeline::before {
+    content: "";
+    position: absolute;
+
+    left: 2cap;
+    top: 40px;
+    bottom: 25px;
+
+    width: 2px;
+
+    background: linear-gradient(
+        to bottom,
+        var(--color-hover-links),
+        var(--color-hover-links)
+    );
+    }
+
+    .timeline-item {
+    position: relative;
+    padding-left: 50px;
+    }
+
+    .timeline-dot {
+    position: absolute;
+
+    left: 11px;
+    top: 45%;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: var(--color-menu-mobile);
+    border: 2px solid var(--color-hover-links);
+
+    }
+
+    .timeline-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--color-background-tecnologies);
+        border: 1px solid var(--color-contorno);
+        backdrop-filter: blur(10px);
+        padding: 1.5rem;
+        border-radius: 20px;
+        transition: .3s;
+        width: 225px;
+    }
+
+    .timeline-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .year {
+    color: var(--color-tecnologies-icons);
+    font-weight: 600;
+    }
+
+    .timeline-card h3 {
+    margin: .5rem 0;
+    color: var(--color-font-normal-text);
+    }
+
+    .timeline-card p {
+    color: var(--color-font-little-text);
+    width: 200px;
+    }
+ 
+    .language-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-block-end: 40px;
+        transform: translateY(-20px);
+        animation: aparecerAbajo 0.7s ease forwards;
+    }
+ 
+    .language-skills h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 27px;
+      font-weight: bold;
+      background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;    
+    }
+   
+    .language-skills span {
+      font-size: 15px;
+      margin-top: -15px;
+      color: var(--color-font-normal-text);
+      width: 350px;
+      padding-block-end: 20px;
+    }     
+    
+    .table-container {
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: var(--color-menu-mobile);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid var(--color-contorno);
+
+    }
+
+    .languages-table {
+        border-collapse: collapse;
+        width: 100%;
+        color: var(--color-font-normal-text);  
+    }
+
+    .languages-table thead {
+        background: var(--color-text-sections);
+        color: #ffffff;
+    }
+
+    .languages-table th {
+        text-align: left;
+        padding: 20px 52px;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        color:  #ffffff;
+    }
+
+    .languages-table td {
+        padding: 20px 25px;
+        border-top: 1px solid var(--color-contorno);
+        vertical-align: middle;
+        color: var(--color-font-normal-text);
+    }
+
+    .languages-table tbody tr {
+        transition: all 0.3s ease;
+    }
+
+    .languages-table tbody tr:nth-child(n+1) td {
+        font-size: 15px;
+    }
+
+    .languages-table th:nth-child(2),
+    .languages-table td:nth-child(2) {
+        text-align: left; 
+    }
+
+
+    .badge {
+        padding: 2px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .badge.native {
+       background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;  
+    }
+
+    .badge.intermediate {
+        background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;  
+    } 
+
+      @keyframes aparecerAbajo {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+     
+  }
+
+}
+
+@media only screen and (min-width: 707px) {
+
+    .education-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translateY(-20px);
+        animation: aparecerAbajo 0.7s ease forwards;
+ 
+    }
+ 
+    .education-info h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;    
+    }
+   
+    .education-info span {
+      font-size: 20px;
+      margin-top: -15px;
+      color: var(--color-font-normal-text);
+      width: 900px;
+    } 
+
+    .timeline {
+      padding-top: 35px;
+      padding-block-end: 15px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      transform: translateY(-20px);
+      animation: aparecerAbajo 0.7s ease forwards;
+    }
+
+    .timeline::before {
+    content: "";
+    position: absolute;
+
+    left: 60px;
+    top: 40px;
+    bottom: 25px;
+
+    width: 2px;
+
+    background: linear-gradient(
+        to bottom,
+        var(--color-hover-links),
+        var(--color-hover-links)
+    );
+    }
+
+    .timeline-item {
+    position: relative;
+    padding-left: 70px;
+    }
+
+    .timeline-dot {
+    position: absolute;
+
+    left: 49px;
+    top: 45%;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: var(--color-menu-mobile);
+    border: 2px solid var(--color-hover-links);
+
+    }
+
+    .timeline-card {
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--color-background-tecnologies);
+        border: 1px solid var(--color-contorno);
+        backdrop-filter: blur(10px);
+        padding: 1.5rem;
+        border-radius: 20px;
+        transition: .3s;
+        width: 600px;
+    }
+
+    .timeline-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .year {
+    color: var(--color-tecnologies-icons);
+    font-weight: 600;
+    }
+
+    .timeline-card h3 {
+    margin: .5rem 0;
+    color: var(--color-font-normal-text);
+    }
+
+    .timeline-card p {
+    color: var(--color-font-little-text);
+    width: 500px;
+    }
+ 
+    .language-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-block-end: 40px;
+        transform: translateY(-20px);
+        animation: aparecerAbajo 0.7s ease forwards;
+    }
+ 
+    .language-skills h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;    
+    }
+   
+    .language-skills span {
+      font-size: 20px;
+      margin-top: -15px;
+      color: var(--color-font-normal-text);
+      width: 900px;
+      padding-block-end: 20px;
+    }     
+    
+    .table-container {
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: var(--color-menu-mobile);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid var(--color-contorno);
+
+    }
+
+    .languages-table {
+        border-collapse: collapse;
+        width: 100%;
+        color: var(--color-font-normal-text);  
+    }
+
+    .languages-table thead {
+        background: var(--color-text-sections);
+        color: #ffffff;
+    }
+
+    .languages-table th {
+        text-align: left;
+        padding: 20px 52px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        color:  #ffffff;
+    }
+
+    .languages-table td {
+        padding: 20px 42px;
+        border-top: 1px solid var(--color-contorno);
+        vertical-align: middle;
+        color: var(--color-font-normal-text);
+    }
+
+    .languages-table tbody tr {
+        transition: all 0.3s ease;
+    }
+
+    .languages-table tbody tr:nth-child(n+1) td {
+        font-size: 18px;
+    }
+
+    .languages-table th:nth-child(2),
+    .languages-table td:nth-child(2) {
+        text-align: left; 
+    }
+
+
+    .badge {
+        padding: 2px 10px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .badge.native {
+       background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;  
+    }
+
+    .badge.intermediate {
+        background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;  
+    } 
+
+    @keyframes aparecerAbajo {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

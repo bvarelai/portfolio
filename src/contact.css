@@ -1,0 +1,217 @@
+
+@media only screen and (max-width: 707px) {
+
+  @media screen and (orientation: portrait) {
+    
+       .roadmap-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translateY(-20px);
+        animation: aparecerAbajo 0.7s ease forwards;
+    }
+ 
+    .roadmap-info h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 27px;
+      font-weight: bold;
+      background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;    
+    }
+   
+    .roadmap-info span {
+      font-size: 15px;
+      margin-top: -15px;
+      color: var(--color-font-normal-text);
+      width: 350px;
+    }
+
+
+    .contact-container{
+      margin-top: 35px;
+      margin-bottom: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      width:  300px;
+      box-sizing: border-box;
+    }
+
+    .contact-first{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width:  300px;
+    }
+
+    .contact-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--color-contorno);
+      padding-bottom: 15px;
+      padding-top: 15px;
+      width: 300px;
+      box-sizing: border-box;
+    }
+
+    .contact-elements{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;    
+      gap: 12px;
+      background-color: red;
+      width: 300px;
+    }
+
+    .div-contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-background-tecnologies) ;
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+    }
+
+    .icon-contact{
+     color: var(--color-tecnologies-icons);
+    }
+
+    .contact-text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-items: center;
+      text-align: left;
+      padding: 10px;
+      margin-top: -25px;
+      width: 300px;
+
+    }
+
+    .contact-text h4{
+      font-weight: bold;
+      color: var(--color-font-normal-text);
+    }
+
+    .contact-text span{
+      font-size: 15px;
+      color: var(--color-font-little-text);
+    }
+  
+  }
+
+}
+
+@media only screen and (min-width: 707px) {
+
+    .roadmap-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translateY(-20px);
+        animation: aparecerAbajo 0.7s ease forwards;
+    }
+ 
+    .roadmap-info h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      background: var(--color-text-sections);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;    
+    }
+   
+    .roadmap-info span {
+      font-size: 20px;
+      margin-top: -15px;
+      color: var(--color-font-normal-text);
+      width: 570px;
+    }
+
+
+    .contact-container{
+      margin-top: 35px;
+      margin-bottom: 45px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .contact-first{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .contact-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      border-bottom: 1px solid var(--color-contorno);
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+
+    .contact-elements{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;    
+      gap: 12px;
+    }
+
+    .div-contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-background-tecnologies) ;
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+    }
+
+    .icon-contact{
+     color: var(--color-tecnologies-icons);
+    }
+
+    .contact-text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-items: center;
+      text-align: left;
+      padding: 10px;
+      margin-top: -25px;
+    }
+
+    .contact-text h4{
+      font-weight: bold;
+      color: var(--color-font-normal-text);
+    }
+
+    .contact-text span{
+      font-size: 15px;
+      color: var(--color-font-little-text);
+    }
+}

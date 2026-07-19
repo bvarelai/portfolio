@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Education from './education'
 import Projects from './proyects'
-import RoadMap from './roadmap'
+import Contact from './contact'
 import Home from './home'
 import { SunIcon, MoonIcon } from '@radix-ui/react-icons'
 
@@ -31,17 +31,17 @@ function App() {
           </div>  
           <div className="menu-web">
             <Link to="/portfolio">Home</Link>
-            <Link to="/portfolio/education" className="disabled-link">Education</Link>
-            <Link to="/portfolio/projects" className="disabled-link">Projects</Link>
-            <Link to="/portfolio/roadmap" className="disabled-link">Road Map</Link>      
+            <Link to="/portfolio/education">Education</Link>
+            <Link to="/portfolio/projects">Projects</Link>
+            <Link to="/portfolio/contact">Contact</Link>      
           </div>
           <div className='menu-web-mobile'>
             <button className="menu-btn" onClick={() => setOpen(!open)}>☰</button>
-            <nav className={`menu ${open ? "open" : ""}`}>
-              <a href="/portfolio" onClick={() => setOpen(false)}>Home</a>
-              <a href="/portfolio/education" className="disabled-link" onClick={() => setOpen(false)}>Education</a>
-              <a href="/portfolio/projects" className="disabled-link" onClick={() => setOpen(false)}>Projects</a>
-              <a href="/portfolio/roadmap" className="disabled-link" onClick={() => setOpen(false)}>Road Map</a>
+            <nav className={`menu ${open ? "open" : ""}`} onClick={() => setOpen(false)}>
+              <a href="/portfolio">Home</a>
+              <a href="/portfolio/education">Education</a>
+              <a href="/portfolio/projects">Projects</a>
+              <a href="/portfolio/contact" className="disabled-link">Contact</a>
             </nav>
           </div>
         </header>
@@ -50,7 +50,7 @@ function App() {
             <Route path="/portfolio" element={<Home />} />
             <Route path="/portfolio/education" element={<Education />} />
             <Route path="/portfolio/projects" element={<Projects />} />
-            <Route path="/portfolio/roadmap" element={<RoadMap />} />
+            <Route path="/portfolio/contact" element={<Contact/>} />
           </Routes>
         </main>
         <footer className='web-footer'>
