@@ -1,6 +1,6 @@
 import './proyects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faPython, faJava, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default function Projects() {
