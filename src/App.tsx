@@ -38,10 +38,10 @@ function App() {
           <div className='menu-web-mobile'>
             <button className="menu-btn" onClick={() => setOpen(!open)}>☰</button>
             <nav className={`menu ${open ? "open" : ""}`} onClick={() => setOpen(false)}>
-              <a href="/portfolio">Home</a>
-              <a href="/portfolio/education">Education</a>
-              <a href="/portfolio/projects">Projects</a>
-              <a href="/portfolio/contact" className="disabled-link">Contact</a>
+              <Link to="/portfolio">Home</Link>
+              <Link to="/portfolio/education">Education</Link>
+              <Link to="/portfolio/projects">Projects</Link>
+              <Link to="/portfolio/contact">Contact</Link>      
             </nav>
           </div>
         </header>

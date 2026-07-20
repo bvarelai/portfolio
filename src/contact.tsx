@@ -7,7 +7,7 @@ export default function Contact() {
 
   const items = [
      { icon: faEnvelope, h4: 'Email', span: 'b.varela.sieiro@gmail.com'},
-     { icon: faLinkedin, h4: 'Linkedin', span: 'es.linkedin.com/in/brais-varela-sieiro'},
+     { icon: faLinkedin, h4: 'Linkedin', span: 'linkedin.com/in/brais-varela-sieiro'},
      { icon: faGithub, h4: 'Github', span: 'github.com/bvarelai'},
      { icon: faLocationDot, h4: 'Location', span: 'A Coruña, Spain'},
     ];

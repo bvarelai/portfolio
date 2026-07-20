@@ -28,19 +28,17 @@
       font-size: 15px;
       margin-top: -15px;
       color: var(--color-font-normal-text);
-      width: 350px;
+      width: 330px;
     }
 
 
     .contact-container{
       margin-top: 35px;
-      margin-bottom: 45px;
+      margin-bottom: 230px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      width:  300px;
       box-sizing: border-box;
     }
 
@@ -49,7 +47,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width:  300px;
     }
 
     .contact-info{
@@ -60,8 +57,10 @@
       border-bottom: 1px solid var(--color-contorno);
       padding-bottom: 15px;
       padding-top: 15px;
-      width: 300px;
       box-sizing: border-box;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 300px;
     }
 
     .contact-elements{
@@ -70,7 +69,6 @@
       align-items: center;
       justify-items: center;    
       gap: 12px;
-      background-color: red;
       width: 300px;
     }
 
@@ -81,8 +79,8 @@
       justify-content: center;
       background-color: var(--color-background-tecnologies) ;
       border-radius: 10px;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
     }
 
     .icon-contact{
@@ -97,7 +95,7 @@
       text-align: left;
       padding: 10px;
       margin-top: -25px;
-      width: 300px;
+      width: 200px;
 
     }
 
@@ -109,6 +107,7 @@
     .contact-text span{
       font-size: 15px;
       color: var(--color-font-little-text);
+      width: 230px;
     }
   
   }
