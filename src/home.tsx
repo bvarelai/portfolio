@@ -3,6 +3,8 @@ import personal_image from '/imagen_real.png'
 import './home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact, faPython, faJava, faGithub, faNodeJs, faDocker, faFlutter, faSquareLinkedin, faGoogle, faCss, faLinux,faJs} from '@fortawesome/free-brands-svg-icons'
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Home () {
   
@@ -29,21 +31,26 @@ export default function Home () {
         </div>
         <img src={personal_image} className="logo" alt="React logo" />
       </div>
-      <div className='link-info'>
-        <div className='link'>
-          <Link rel="stylesheet" to="https://github.com/bvarelai" >
-             <FontAwesomeIcon className='icon-tecnologies' icon={faGithub} size="2x"/>
-          </Link>
+      <div className='cv-link'>
+        <div className='button-cv'>
+          <a href="/portfolio/public/CV.pdf" target="_blank" rel="noopener noreferrer">Download CV<FontAwesomeIcon className='arrow-cv' icon={faArrowRight} size="lg"/></a>
         </div>
-        <div className='link'>
-          <Link rel="stylesheet" to="mailto:b.varela.sieiro@gmail.com" >
-             <FontAwesomeIcon className='icon-tecnologies' icon={faGoogle} size="2x"/>
-          </Link>
-        </div>
-        <div className='link'>
-          <Link rel="stylesheet" to="https://www.linkedin.com/in/brais-varela-sieiro-939aa6244/" >
-             <FontAwesomeIcon className='icon-tecnologies' icon={faSquareLinkedin} size="2x"/>
-          </Link>
+        <div className='link-info'>
+          <div className='link'>
+            <Link rel="stylesheet" to="https://github.com/bvarelai" >
+              <FontAwesomeIcon className='icon-tecnologies' icon={faGithub} size="2x"/>
+            </Link>
+          </div>
+          <div className='link'>
+            <Link rel="stylesheet" to="mailto:b.varela.sieiro@gmail.com" >
+              <FontAwesomeIcon className='icon-tecnologies' icon={faGoogle} size="2x"/>
+            </Link>
+          </div>
+          <div className='link'>
+            <Link rel="stylesheet" to="https://www.linkedin.com/in/brais-varela-sieiro-939aa6244/" >
+              <FontAwesomeIcon className='icon-tecnologies' icon={faSquareLinkedin} size="2x"/>
+            </Link>
+          </div>
         </div>
       </div>
       <div className='about-me'>
