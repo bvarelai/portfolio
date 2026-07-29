@@ -33,7 +33,7 @@ export default function Home () {
       </div>
       <div className='cv-link'>
         <div className='button-cv'>
-          <a href="/portfolio/public/CV.pdf" target="_blank" rel="noopener noreferrer">Download CV<FontAwesomeIcon className='arrow-cv' icon={faArrowRight} size="lg"/></a>
+          <a href="/portfolio/CV.pdf" target="_blank" rel="noopener noreferrer">Download CV<FontAwesomeIcon className='arrow-cv' icon={faArrowRight} size="lg"/></a>
         </div>
         <div className='link-info'>
           <div className='link'>
