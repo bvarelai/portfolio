@@ -1,20 +1,26 @@
 import './education.css'
+import { translations } from './translations';
 
-export default function Education() {
+
+type Language = "es" | "en" | "gal";
 
 
+export default function Education({ language }: { language: Language }) {
+
+  const t = translations[language];
+  
   const items = [
-    {year: '2019', title: 'C# and Java Programming Course', description: 'Completed a training course at Easy System covering the fundamentals of C# and Java, including object-oriented programming, core programming concepts, debugging, and software development best practices.'},
-    {year: '2020-2025', title: 'Degree in Computer Engineering', description: 'Graduated with a Bachelors Degree in Computer Engineering from the University of A Coruña (UDC). Gained solid knowledge in software engineering, object-oriented programming, databases, computer networks, operating systems, and full software development lifecycle through theoretical and practical projects.'},
-    {year: '2025-Present', title: 'Masters Degree in Computer Engineering (MUEI)', description: 'Graduated with a Masters Degree in Computer Engineering from the University of A Coruña (UDC). Advanced knowledge in software architecture, distributed systems, cloud computing, cybersecurity, artificial intelligence, and software engineering methodologies. Completed complex software development projects, enhancing problem-solving, teamwork, and technical leadership skills.'}
+    {year: '2019', title: t.timelinetitle, description: t.timelinedescription1},
+    {year: '2020-2025', title: t.timelinetitle2, description: t.timelinedescription2},
+    {year: '2025-Present', title: t.timelinetitle3, description: t.timelinedescription3}
   ];
+  
 
   return (
     <div> 
       <div className='education-info'>
-        <h2>My Education</h2>
-        <span>My educational journey has been shaped by continuous learning, curiosity, and a strong interest in technology. The timeline below highlights the most important milestones in my learning path, showing how my knowledge and experience have evolved over time.
-        </span>
+        <h2>{t.educationh2}</h2>
+        <span>{t.educationh2span}</span>
       </div>
       <div className='timeline'>   
         {items.map((item, index) => (
@@ -29,8 +35,8 @@ export default function Education() {
         ))}
       </div>
       <div className='language-skills'>
-        <h2>Language Skills</h2>
-        <span>Effective communication is essential in software development. I am fluent in Spanish and Galician and have an intermediate level of English, allowing me to understand basic technical documentation and communicate effectively in common situations.</span>
+        <h2>{t.languageSkillh2}</h2>
+        <span>{t.languageSkillsspan}</span>
         
         <div className="table-container">
           <table className="languages-table">
@@ -42,26 +48,26 @@ export default function Education() {
             </thead>
             <tbody>
                 <tr>
-                    <td>Spanish</td>
+                    <td>{t.spanish}</td>
                     <td>
                         <span className="badge native">
-                            Native
+                            {t.levelnative}
                         </span>
                     </td>
                 </tr>
                 <tr>
-                    <td>Galician</td>
+                    <td>{t.galician}</td>
                     <td>
                         <span className="badge native">
-                            Native
+                            {t.levelnative}
                         </span>
                     </td>
                 </tr>
                 <tr>
-                    <td>English</td>
+                    <td>{t.english}</td>
                     <td>
                         <span className="badge intermediate">
-                            Intermediate
+                            {t.levelintermediate}
                         </span>
                     </td>
                 </tr>

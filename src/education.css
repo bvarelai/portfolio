@@ -16,7 +16,7 @@
  
     .education-info h2 {
       font-family: 'Inter', sans-serif;
-      font-size: 27px;
+      font-size: 32px;
       font-weight: bold;
       background: var(--color-text-sections);
       background-clip: text;
@@ -26,7 +26,7 @@
     }
    
     .education-info span {
-      font-size: 15px;
+      font-size: 18px;
       margin-top: -15px;
       color: var(--color-font-normal-text);
       width: 350px;
@@ -126,7 +126,7 @@
  
     .language-skills h2 {
       font-family: 'Inter', sans-serif;
-      font-size: 27px;
+      font-size: 32px;
       font-weight: bold;
       background: var(--color-text-sections);
       background-clip: text;
@@ -136,10 +136,10 @@
     }
    
     .language-skills span {
-      font-size: 15px;
+      font-size: 18px;
       margin-top: -15px;
       color: var(--color-font-normal-text);
-      width: 350px;
+      width: 380px;
       padding-block-end: 20px;
     }     
     
@@ -236,6 +236,7 @@
 @media only screen and (min-width: 707px) {
 
     .education-info {
+        margin-top: 25px;
         display: flex;
         flex-direction: column;
         align-items: center;

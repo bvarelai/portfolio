@@ -4,9 +4,13 @@ import './home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact, faPython, faJava, faGithub, faNodeJs, faDocker, faFlutter, faSquareLinkedin, faGoogle, faCss, faLinux,faJs} from '@fortawesome/free-brands-svg-icons'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import { translations } from "./translations";
 
+type Language = "es" | "en" | "gal";
 
-export default function Home () {
+export default function Home ({ language }: { language: Language }) {
+  
+  const t = translations[language];
   
   const items = [
     { icon: faPython, name: 'Python' },
@@ -23,66 +27,68 @@ export default function Home () {
   
   return(
     <div>
-      <div className="presentation">
-        <div className="information">
-          <h1>Brais Varela Sieiro</h1>
-          <h2>IT Engineer</h2>
-          <p>Computer engineer specializing in information technology. Passionate about expanding my skills and improving my abilities.</p>
-        </div>
-        <img src={personal_image} className="logo" alt="React logo" />
-      </div>
-      <div className='cv-link'>
-        <div className='button-cv'>
-          <a href="/portfolio/CV.pdf" target="_blank" rel="noopener noreferrer">Download CV<FontAwesomeIcon className='arrow-cv' icon={faArrowRight} size="lg"/></a>
-        </div>
-        <div className='link-info'>
-          <div className='link'>
-            <Link rel="stylesheet" to="https://github.com/bvarelai" >
-              <FontAwesomeIcon className='icon-tecnologies' icon={faGithub} size="2x"/>
-            </Link>
+      <div className='first-section'>
+        <div className="presentation">
+          <div className="information">
+            <h1>Brais Varela Sieiro</h1>
+            <h2>{t.informationh2}</h2>
+            <p>{t.informationp}</p>
           </div>
-          <div className='link'>
-            <Link rel="stylesheet" to="mailto:b.varela.sieiro@gmail.com" >
-              <FontAwesomeIcon className='icon-tecnologies' icon={faGoogle} size="2x"/>
-            </Link>
+          <img src={personal_image} className="logo" alt="React logo" />
+        </div>
+        <div className='cv-link'>
+          <div className='button-cv'>
+            <a href="/portfolio/CV.pdf" target="_blank" rel="noopener noreferrer">{t.downloadCV}<FontAwesomeIcon className='arrow-cv' icon={faArrowRight} size="lg"/></a>
           </div>
-          <div className='link'>
-            <Link rel="stylesheet" to="https://www.linkedin.com/in/brais-varela-sieiro-939aa6244/" >
-              <FontAwesomeIcon className='icon-tecnologies' icon={faSquareLinkedin} size="2x"/>
-            </Link>
+          <div className='link-info'>
+            <div className='link'>
+              <Link rel="stylesheet" to="https://github.com/bvarelai" >
+                <FontAwesomeIcon className='icon-tecnologies' icon={faGithub} size="2x"/>
+              </Link>
+            </div>
+            <div className='link'>
+              <Link rel="stylesheet" to="mailto:b.varela.sieiro@gmail.com" >
+                <FontAwesomeIcon className='icon-tecnologies' icon={faGoogle} size="2x"/>
+              </Link>
+            </div>
+            <div className='link'>
+              <Link rel="stylesheet" to="https://www.linkedin.com/in/brais-varela-sieiro-939aa6244/" >
+                <FontAwesomeIcon className='icon-tecnologies' icon={faSquareLinkedin} size="2x"/>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
       <div className='about-me'>
-        <h2>About Me</h2>
+        <h2>{t.aboutme}</h2>
         <span>
-          I'm a computer engineer with knowledge about web development and IT. I graduated in Informatics Engineering from the University of A Coruña, where I gained experience across diferent areas of computer engineering. 
+          {t.aboutmespan} 
           </span>
         <div className='personal-info'>          
            <div>
-              <h3>💡 Focus</h3>
+              <h3>{t.aboutmeh31}</h3>
               <li>
-                Information Technology (IT)
+                {t.aboutmeli1}
               </li>
               <li>
-                Web Development 
+                {t.aboutmeli2}
               </li>  
            </div>
            <div>
-              <h3>🔧 Skills & Interest</h3>
+              <h3>{t.aboutmeh32}</h3>
               <li>
-                Programming & Sotfware Development
+                {t.aboutmeli3}
               </li>
               <li>
-                Management with React & TypeScrypt
+                {t.aboutmeli4}
               </li>
            </div>
         </div>
       </div>
       <div  className='competence-abilities'>
-        <h2>Competences and abilities</h2>
+        <h2>{t.competences}</h2>
         <span>
-          There are diferent skills that I have acquired during my career and personal projects. These are some of them:
+          {t.competencespan}
         </span>
         <div className='tecnologies'>          
             {items.map((item, index) => (

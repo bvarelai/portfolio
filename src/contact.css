@@ -4,6 +4,7 @@
   @media screen and (orientation: portrait) {
     
        .roadmap-info {
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,13 +29,13 @@
       font-size: 15px;
       margin-top: -15px;
       color: var(--color-font-normal-text);
-      width: 330px;
+      width: 360px;
     }
 
 
     .contact-container{
       margin-top: 35px;
-      margin-bottom: 230px;
+      margin-bottom: 255px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -117,6 +118,7 @@
 @media only screen and (min-width: 707px) {
 
     .roadmap-info {
+        margin-top: 25px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -147,7 +149,7 @@
 
     .contact-container{
       margin-top: 35px;
-      margin-bottom: 45px;
+      margin-bottom: 37px;
       display: flex;
       flex-direction: row;
       align-items: center;

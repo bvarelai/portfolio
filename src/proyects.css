@@ -15,7 +15,7 @@
  
     .projects-info h2 {
       font-family: 'Inter', sans-serif;
-      font-size: 27px;
+      font-size: 32px;
       font-weight: bold;
       background: var(--color-text-sections);
       background-clip: text;
@@ -25,7 +25,7 @@
     }
    
     .projects-info span {
-      font-size: 15px;
+      font-size: 18px;
       margin-top: -15px;
       color: var(--color-font-normal-text);
       width: 350px;
@@ -60,13 +60,13 @@
     }
 
     .project-content h3{
-      font-size:20px;
+      font-size:24px;
       font-weight:bold;
       color:var(--color-font-normal-text);
     }
 
     .project-content span{
-      font-size:15px;
+      font-size:18px;
       color:var(--color-font-little-text);
       margin-top:10px;
     }
@@ -143,13 +143,13 @@
     }
 
     .coming-soon h3{
-      font-size:20px;
+      font-size:21px;
       font-weight:bold;
       color:var(--color-font-normal-text);
     }
 
     .coming-soon span{
-      font-size:15px;
+      font-size:17px;
       color:var(--color-font-little-text);
       width: 70%;
     }
@@ -186,6 +186,7 @@
 @media only screen and (min-width: 707px) {
 
     .projects-info {
+        margin-top: 25px;
         display: flex;
         flex-direction: column;
         align-items: center;

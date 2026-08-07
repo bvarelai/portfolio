@@ -2,19 +2,24 @@ import './proyects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { translations } from './translations';
 
-export default function Projects() {
+type Language = "es" | "en" | "gal";
+
+export default function Projects({ language }: { language: Language }) {
+
+const t = translations[language];
 
 const items = [
-   {title: 'SportNexus Website', description: 'SportNexus is a web application developed as my Bachelors Final Project (TFG), designed to simplify the creation, management, and organization of sports events. The platform enables users to create competitions, manage participants, schedule events, and streamline the overall event organization process through an intuitive and user-friendly interface.', techStack: ['JavaScript', 'React', 'Python', 'FastAPI'], githubLink: 'https://github.com/bvarelai/TFG.git', liveDemoLink: null},
-   {title: 'ConsumerWise', description: 'ConsumerWise is an intuitive application that helps users make informed decisions about their consumption of resources such as electricity, water, and more. Featuring detailed analytics and interactive data visualizations, it allows users to monitor and better understand their environmental footprint, encouraging a more sustainable lifestyle. The project was developed as part of the HackUDC 2024 hackathon.', techStack: ['Python', 'FastAPI', 'Kotlin', 'C++', 'Dart'], githubLink: 'https://github.com/dsocasc/ConsumerWise.git', liveDemoLink: null}
+   {title: t.proyectitle1, description: t.proyectdescription1, techStack: ['JavaScript', 'React', 'Python', 'FastAPI'], githubLink: 'https://github.com/bvarelai/TFG.git', liveDemoLink: null},
+   {title: t.proyectitle2, description: t.proyectdescription2, techStack: ['Python', 'FastAPI', 'Kotlin', 'C++', 'Dart'], githubLink: 'https://github.com/dsocasc/ConsumerWise.git', liveDemoLink: null}
   ];
     
   return (
     <div>
       <div className='projects-info'>
-        <h2>My Projects</h2>
-        <span>These projects involved designing, implementing, testing, and maintaining applications while improving my skills in programming, problem-solving, and software architecture.</span>
+        <h2>{t.proyectsh2}</h2>
+        <span>{t.proyectsh2span}</span>
       </div>
       <div className="projects-grid">
         {items.map((item, index) => (
@@ -48,10 +53,9 @@ const items = [
         ))}
         <div className="project-card coming-soon">
           <div className="coming-icon">+</div>
-          <h3>More Projects Coming Soon</h3>
+          <h3>{t.commingsoon}</h3>
           <span>
-              I am continuously working on new projects to expand my skills and portfolio.
-              Stay tuned for future updates!
+            {t.commingsoonspan}
           </span>
         </div>
       </div>

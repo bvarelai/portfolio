@@ -2,9 +2,14 @@ import './contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope,faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import { translations } from "./translations";
 
-export default function Contact() {
+type Language = "es" | "en" | "gal";
 
+export default function Contact({ language }: { language: Language }) {
+
+  const t = translations[language];
+  
   const items = [
      { icon: faEnvelope, h4: 'Email', span: 'b.varela.sieiro@gmail.com'},
      { icon: faLinkedin, h4: 'Linkedin', span: 'linkedin.com/in/brais-varela-sieiro'},
@@ -15,10 +20,8 @@ export default function Contact() {
   return (
     <div>
       <div className="roadmap-info">
-        <h2>Get in Touch</h2>
-        <span>I`m always open to new opportunities, collaborations or just a friends hello.
-          Let`s build something amazing together!
-        </span>
+        <h2>{t.getintouch}</h2>
+        <span>{t.getintouchspan}</span>
         <div className="contact-container"> 
           <div className='contact-first'>
             {items.map((item, index) => (
