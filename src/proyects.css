@@ -28,7 +28,7 @@
       font-size: 18px;
       margin-top: -15px;
       color: var(--color-font-normal-text);
-      width: 350px;
+      width: 340px;
     }
     
     .projects-grid {
@@ -48,7 +48,7 @@
       overflow:hidden;
       border: 1px solid var(--color-contorno);
       transition: 0.5s;
-      width: 350px;
+      width: 340px;
     }
 
     .project-card:hover{
@@ -66,7 +66,7 @@
     }
 
     .project-content span{
-      font-size:18px;
+      font-size:17px;
       color:var(--color-font-little-text);
       margin-top:10px;
     }

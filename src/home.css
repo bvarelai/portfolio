@@ -477,7 +477,7 @@
     .web-footer{
       background-color: var(--color-footer);
       color: var(--color-font-normal-text);
-      font-size: 14px;    
+      font-size: 13px;    
       font-family: 'Inter', sans-serif;
       display: flex;
       flex-direction: row;
@@ -591,7 +591,7 @@
 
 .language-button{
     margin-top: 2px;
-    padding:8px 17px;
+    padding:8px 2px; 
     border-radius:999px;
     background:transparent;
     color:var(--color-font-normal-text);

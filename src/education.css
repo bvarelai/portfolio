@@ -29,7 +29,7 @@
       font-size: 18px;
       margin-top: -15px;
       color: var(--color-font-normal-text);
-      width: 350px;
+      width: 320px;
     } 
 
     .timeline {
@@ -139,7 +139,7 @@
       font-size: 18px;
       margin-top: -15px;
       color: var(--color-font-normal-text);
-      width: 380px;
+      width: 340px;
       padding-block-end: 20px;
     }     
     
