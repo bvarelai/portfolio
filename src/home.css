@@ -440,7 +440,6 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 400px;
     }
 
     .links-info img {
@@ -477,7 +476,7 @@
     .web-footer{
       background-color: var(--color-footer);
       color: var(--color-font-normal-text);
-      font-size: 13px;    
+      font-size: 12px;    
       font-family: 'Inter', sans-serif;
       display: flex;
       flex-direction: row;
