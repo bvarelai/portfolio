@@ -533,7 +533,12 @@
 @media only screen and (min-width: 707px) {
 
   .web-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: var(--color-header);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     margin: -8px;
     padding: 25px;
     color: var(--color-font-normal-text);
@@ -824,6 +829,7 @@
     align-items: center;
     transform: translateY(-20px);
     animation: aparecerAbajo 0.7s ease forwards;   
+    margin-bottom: 25px;
   }
   
   .competence-abilities h2{

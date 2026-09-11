@@ -1,7 +1,7 @@
 import './contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import {faEnvelope,faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope,faLocationDot, faClock, faBriefcase} from '@fortawesome/free-solid-svg-icons'
 import { translations } from "./translations";
 
 type Language = "es" | "en" | "gal";
@@ -14,7 +14,9 @@ export default function Contact({ language }: { language: Language }) {
      { icon: faEnvelope, h4: 'Email', span: 'b.varela.sieiro@gmail.com'},
      { icon: faLinkedin, h4: 'Linkedin', span: 'linkedin.com/in/brais-varela-sieiro'},
      { icon: faGithub, h4: 'Github', span: 'github.com/bvarelai'},
-     { icon: faLocationDot, h4: 'Location', span: 'A Coruña, Spain'},
+     { icon: faLocationDot, h4: t.getintouchlocation, span: 'A Coruña, ' + t.getintouchcountry },
+     { icon: faClock, h4: t.getintouchavailable, span: t.getintouchavailableyes },
+     { icon: faBriefcase, h4: t.getintouchwork, span: t.getintouchworktype }
     ];
 
   return (

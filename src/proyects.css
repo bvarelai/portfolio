@@ -135,7 +135,7 @@
       border: 1px dashed var(--color-hover-links);
       background: var(--color-background-tecnologies);
       transition:.3s;
-
+      margin-bottom: 20px;
     }
 
     .coming-soon:hover{
@@ -316,7 +316,7 @@
       border: 1px dashed var(--color-hover-links);
       background: var(--color-background-tecnologies);
       transition:.3s;
-
+      margin-bottom: 20px;
     }
 
     .coming-soon:hover{

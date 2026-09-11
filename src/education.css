@@ -152,6 +152,7 @@
     backdrop-filter: blur(10px);
 
     border: 1px solid var(--color-contorno);
+    margin-bottom: 5px;
 
     }
 
@@ -386,6 +387,7 @@
     backdrop-filter: blur(10px);
 
     border: 1px solid var(--color-contorno);
+    margin-bottom: 25px;
 
     }
 
