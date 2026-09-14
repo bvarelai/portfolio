@@ -104,7 +104,7 @@ export const translations = {
     proyectitle2: "ConsumerWise",
     proyectdescription2: "ConsumerWise is an intuitive application that helps users make informed decisions about their consumption of resources such as electricity. Featuring detailed analytics and interactive data visualizations, it allows users to monitor and better understand their environmental footprint, encouraging a more sustainable lifestyle. The project was developed as part of the HackUDC 2024 hackathon.",
     proyectechstack2: "Python, FastAPI, Kotlin, C++, Dart",
-    commingsoon: "My projects coming soon",
+    commingsoon: "More projects coming soon",
     commingsoonspan: "I am continuously working on new projects to expand my skills and portfolio. Stay tuned for future updates!"
   },
   gal: {
