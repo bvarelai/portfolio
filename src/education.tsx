@@ -15,6 +15,11 @@ export default function Education({ language }: { language: Language }) {
     {year: '2025-Present', title: t.timelinetitle3, description: t.timelinedescription3}
   ];
   
+  const languages = [
+    { name: t.spanish, level: t.levelnative, percentage: 100 },
+    { name: t.galician, level: t.levelnative, percentage: 100 },
+    { name: t.english, level: t.levelintermediate, percentage: 60}
+  ];
 
   return (
     <div> 
@@ -38,43 +43,31 @@ export default function Education({ language }: { language: Language }) {
         <h2>{t.languageSkillh2}</h2>
         <span>{t.languageSkillsspan}</span>
         
-        <div className="table-container">
-          <table className="languages-table">
-            <thead>
-                <tr>
-                    <th>Language</th>
-                    <th>Level</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>{t.spanish}</td>
-                    <td>
-                        <span className="badge native">
-                            {t.levelnative}
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>{t.galician}</td>
-                    <td>
-                        <span className="badge native">
-                            {t.levelnative}
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>{t.english}</td>
-                    <td>
-                        <span className="badge intermediate">
-                            {t.levelintermediate}
-                        </span>
-                    </td>
-                </tr>
-            </tbody>
-          </table>
+        
+        <div className="languages-card">
+          {languages.map((language) => (
+            <div className="language-row" key={language.name}>
+
+              <span className="language-name">
+                {language.name}
+              </span>
+
+              <div className="progress-container">
+                  <div
+                    className="progress-bar"
+                    style={{
+                      "--progress": `${language.percentage}%`
+                    } as React.CSSProperties}
+                  />
+              </div>
+              <div className="language-level">
+                <span>{language.level}</span>
+                <small>{language.percentage}%</small>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
+     </div>
     </div>
   )
 }
